@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <title>King of Stackers</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <!--<script src="//use.typekit.net/zzzzzz.js"></script>-->
+		<!--<script>try{Typekit.load();}catch(e){}</script>-->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="wrapper">
+
+	        <header>
+		       <div class="frame">
+
+			    <nav class="mobile-nav">
+		       		<ul>
+		       			<li><a href="about.html">About</a></li>
+		       			<li><a href="vs.html">Vs</a></li>
+		       			<li><a href="pc-challenge.html">PC Challenge</a></li>
+		       			<li><a href="#">Replays</a></li>
+		       			<li><a href="profile.html">Members</a></li>
+		       		</ul>
+			    </nav>
+
+		       	<div class="logo" title="King of Stackers"><h1><a href="index.html">King of Stackers</a></h1></div>
+
+		       	<button class="toggle-mobile-nav"><span></span></button>
+
+		       	<nav class="user-nav">
+		       		<ul>
+		       			<li><a href="#">Login</a></li>
+		       			<li><a href="#">Sign Up</a></li>
+		       		</ul>
+			    </nav>
+
+		       </div>
+	        </header>
+
+	        <div class="content pc">
+		        <div class="frame">
+
+					<nav class="main-nav">
+			       		<ul>
+			       			<li><a href="about.html">About</a></li>
+			       			<li><a href="vs.html">Vs</a></li>
+			       			<li class="active"><a href="pc-challenge.html">PC Challenge</a></li>
+			       			<li><a href="#">Replays</a></li>
+			       			<li><a href="profile.html">Members</a></li>
+			       		</ul>
+				    </nav>
+
+				    <div class="page-content game-view show-info-bar">
+
+					    <aside class="info-bar">
+						    <button class="toggle-info-bar icon-info"></button>
+						    <ul>
+							    <li><strong>Randomizer:</strong> 7-Bag</li>
+							    <li><strong>Starting Pieces:</strong> 250</li>
+							    <li><strong>Controls:</strong> Keyboard</li>
+						    </ul>
+					    </aside>
+
+					    <h3>Perfect Clear Challenge</h3>
+
+					    <div class="pc-game">
+
+						    <div class="board-main">
+						    	<canvas class="matrix"></canvas>
+						    </div>
+
+						    <div class="board-hold">
+							    <h5>Hold</h5>
+							    <canvas class="hold"></canvas>
+						    </div>
+
+						    <div class="board-next">
+							    <h5>Next</h5>
+							    <canvas class="next"></canvas>
+						    </div>
+
+						    <div class="moves">
+							    <h5>Moves:</h5>
+							    <div class="amount">73</div>
+						    </div>
+
+						    <div class="clears">
+							    <h5>Clears:</h5>
+							    <div class="amount">5</div>
+						    </div>
+
+						    <div class="controls">
+							    <h5>Controls</h5>
+							    <div class="icon-controls"></div>
+							    <div class="control-buttons">
+								    <div class="button icon-rotate-left"><h5>90&deg;</h5></div>
+									    <div class="button icon-rotate-right"><h5>90&deg;</h5></div>
+									    <div class="button icon-rotate-180"><h5>180&deg;</h5></div>
+									    <div class="button icon-arrow-left"><h5>left</h5></div>
+									    <div class="button icon-arrow-right"><h5>right</h5></div>
+									    <div class="button icon-arrow-down"><h5>down</h5></div>
+									    <div class="button icon-double-arrow-down"><h5>drop</h5></div>
+									    <div class="button icon-arrow-up-box"><h5>hold</h5></div>
+									    <div class="button icon-arrow-up"><h5>reset</h5></div>
+									    <div class="button icon-revert"><h5>revert</h5></div>
+									    <div class="button icon-arrow-down-tray"><h5>place</h5></div>
+									    <div class="button icon-arrow-down-box"><h5>commit</h5></div>
+								</div>
+						    </div>
+
+					    </div>
+
+
+				    </div>
+
+		        </div>
+
+		        <aside class="sidebar">
+		        	<button class="toggle-sidebar icon-left-chevron"></button>
+		        	<button class="toggle-mobile icon-close"><h4>Close</h4></button>
+		        	<section class="collapsed">
+			        	<h3 class="icon-left-chevron">Challenges</h3>
+			        	<ul>
+				        	<li>
+				        		<p>from: <a href="#">FieryLight</a>&nbsp;&nbsp;&nbsp;on: <span class="time-date">6:28pm&nbsp;&nbsp;Aug 27, 2015</span></p>
+				        		<button>Decline</button>
+				        		<button>Accept</button>
+				        	</li>
+				        	<li>
+				        		<p>from: <a href="#">YaoHe</a>&nbsp;&nbsp;&nbsp;on: <span class="time-date">3:07pm&nbsp;&nbsp;Jul 14, 2015</span></p>
+				        		<button>Decline</button>
+				        		<button>Accept</button>
+				        	</li>
+				        	<li>
+				        		<p>from: <a href="#">FieryLight</a>&nbsp;&nbsp;&nbsp;on: <span class="time-date">6:28pm&nbsp;&nbsp;Aug 27, 2015</span></p>
+				        		<button>Decline</button>
+				        		<button>Accept</button>
+				        	</li>
+				        	<li>
+				        		<p>from: <a href="#">YaoHe</a>&nbsp;&nbsp;&nbsp;on: <span class="time-date">3:07pm&nbsp;&nbsp;Jul 14, 2015</span></p>
+				        		<button>Decline</button>
+				        		<button>Accept</button>
+				        	</li>
+			        	</ul>
+		        	</section>
+		        	<section class="collapsed">
+			        	<h3 class="icon-left-chevron">Recent Games</h3>
+			        	<ul>
+				        	<li></li>
+				        	<li></li>
+			        	</ul>
+		        	</section>
+		        	<section class="collapsed">
+			        	<h3 class="icon-left-chevron">Active Members</h3>
+			        	<ul>
+				        	<li></li>
+				        	<li></li>
+			        	</ul>
+		        	</section>
+		        </aside>
+	        </div>
+
+
+
+		    <div class="push clear"></div>
+
+        </div>
+
+
+        <footer>
+        	<div class="frame">
+	        	<nav class="footer-nav">
+        			<ul>
+        				<li><a href="#">IRC</a></li>
+        				<li><a href="#">Forum</a></li>
+        				<li><a href="#">Support</a></li>
+        			</ul>
+        		</nav>
+        		<div class="copyright toggle-dark-theme">
+	        		&copy; <script type="text/javascript">var time = new Date(); document.write(time.getFullYear());</script> King of Stackers. All Rights Reserved.
+	        		<br>
+	        		<ul>
+        				<li><a href="#">Terms & Conditions</a></li>
+        				<li><a href="#">Privacy Policy</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        </footer>
+
+    </body>
+
+</html>
