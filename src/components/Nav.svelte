@@ -1,3 +1,4 @@
+<!-- old nav from template, left for reference -->
 <script>
   export let segment;
 </script>

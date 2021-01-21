@@ -1,56 +1,9 @@
-<script>
-  import successkid from "images/successkid.jpg";
-</script>
-
 <svelte:head>
-  <title>Sapper project template</title>
+  <title>King of Stackers</title>
 </svelte:head>
 
-<h1>Greater success!</h1>
-
-<figure>
-  <img alt="Success Kid" src={successkid} />
-  <figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p>
-  <strong>
-    Try editing this file (src/routes/index.svelte) to test live reloading.
-  </strong>
-</p>
-
-<style>
-  h1,
-  figure,
-  p {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
-  }
-
-  figure {
-    margin: 0 0 1em 0;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
-  }
-
-  p {
-    margin: 1em auto;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
-  }
-</style>
+<!-- not really sure what to put here, the mockup is just a blank page -->
+Welcome to King of Stackers, a turn-based strategy game in which you must stack blocks
+in neat rows. Doing so fills your opponent's field with random blocks, making it
+harder for them to arrange their blocks. Twisting blocks into tight spaces, or stacking
+a lot of rows at once, will put your opponent in greater jeopardy.
