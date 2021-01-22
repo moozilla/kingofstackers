@@ -1,5 +1,5 @@
 <script>
-  import MainNav from "../components/layout/MainNav.svelte";
+  import Nav from "../components/layout/nav/Nav.svelte";
 
   // used for copyright, TODO: move to footer component
   let date = new Date();
@@ -11,15 +11,7 @@
 <div class="wrapper">
   <header>
     <div class="frame">
-      <nav class="mobile-nav">
-        <ul>
-          <li><a href="about">About</a></li>
-          <li><a href="vs">Vs</a></li>
-          <li><a href="pc-challenge">PC Challenge</a></li>
-          <li><a href="replays">Replays</a></li>
-          <li><a href="profile">Members</a></li>
-        </ul>
-      </nav>
+      <Nav {segment} class="mobile-nav" />
 
       <div class="logo" title="King of Stackers">
         <h1><a href="/">King of Stackers</a></h1>
@@ -38,7 +30,7 @@
 
   <div class="content">
     <div class="frame">
-      <MainNav {segment} />
+      <Nav {segment} class="main-nav" />
 
       <!-- TODO: make this a <main> tag? -->
       <div class="page-content homepage">
