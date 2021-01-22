@@ -26,7 +26,8 @@
 <div class="wrapper">
   <Header {segment} {mainNavLinks} {userNavLinks} />
 
-  <div class="content">
+  <!-- <div class="content"> -->
+  <div class="content show-sidebar">
     <div class="frame">
       <!-- TODO: rearrange so this can go in Header component -->
       <Nav {segment} links={mainNavLinks} class="main-nav" />
