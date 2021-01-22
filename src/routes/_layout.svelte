@@ -1,65 +1,45 @@
 <script>
   import Nav from "../components/layout/nav/Nav.svelte";
+  import Header from "../components/layout/Header.svelte";
+  import Footer from "../components/layout/Footer.svelte";
+  import Sidebar from "../components/layout/sidebar/Sidebar.svelte";
 
-  // used for copyright, TODO: move to footer component
-  let date = new Date();
-  let currentYear = date.getFullYear();
+  let mainNavLinks = [
+    { route: "about", label: "About" },
+    { route: "vs", label: "VS" },
+    { route: "pc-challenge", label: "PC Challenge" },
+    { route: "replays", label: "Replays" },
+    { route: "profile", label: "Members" },
+  ];
+  let userNavLinks = [
+    { route: "login", label: "Login" },
+    { route: "sign-up", label: "Sign Up" },
+  ];
+  let footerLinks = [
+    { route: "discord", label: "Discord" },
+    { route: "support", label: "Support" },
+  ];
 
   export let segment;
 </script>
 
 <div class="wrapper">
-  <header>
-    <div class="frame">
-      <Nav {segment} class="mobile-nav" />
-
-      <div class="logo" title="King of Stackers">
-        <h1><a href="/">King of Stackers</a></h1>
-      </div>
-
-      <button class="toggle-mobile-nav"><span /></button>
-
-      <nav class="user-nav">
-        <ul>
-          <li><a href="login">Login</a></li>
-          <li><a href="sign-up">Sign Up</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <Header {segment} {mainNavLinks} {userNavLinks} />
 
   <div class="content">
     <div class="frame">
-      <Nav {segment} class="main-nav" />
-
+      <!-- TODO: rearrange so this can go in Header component -->
+      <Nav {segment} links={mainNavLinks} class="main-nav" />
       <!-- TODO: make this a <main> tag? -->
       <div class="page-content homepage">
         <slot />
       </div>
     </div>
 
-    <aside class="sidebar" />
+    <Sidebar />
   </div>
 
   <div class="push clear" />
 </div>
 
-<footer>
-  <div class="frame">
-    <nav class="footer-nav">
-      <ul>
-        <li><a href="footer-link">IRC</a></li>
-        <li><a href="footer-link">Forum</a></li>
-        <li><a href="footer-link">Support</a></li>
-      </ul>
-    </nav>
-    <div class="copyright toggle-dark-theme">
-      &copy; {currentYear} King of Stackers. All Rights Reserved.
-      <br />
-      <ul>
-        <li><a href="legal">Terms & Conditions</a></li>
-        <li><a href="legal">Privacy Policy</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+<Footer {segment} links={footerLinks} />

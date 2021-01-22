@@ -3,15 +3,7 @@
 
   let className;
   export { className as class };
-  export let segment;
-
-  let links = [
-    { route: "about", label: "About" },
-    { route: "vs", label: "VS" },
-    { route: "pc-challenge", label: "PC Challenge" },
-    { route: "replays", label: "Replays" },
-    { route: "profile", label: "Members" },
-  ];
+  export let segment, links;
 </script>
 
 <nav class={className}>
